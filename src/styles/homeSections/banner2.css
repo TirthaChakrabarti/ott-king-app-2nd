@@ -1,0 +1,112 @@
+/* banner2.css */
+
+.banner-two {
+  width: 100vw;
+  height: 65vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff; /* White text for contrast */
+  /* overflow: hidden; */
+  /* border: 1px solid red; */
+}
+
+/* Adding a gradient overlay for better readability */
+/* .banner-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+  /* background: rgba(46, 50, 67, 0.5); Black overlay with 50% opacity */
+  /* z-index: 1;
+} */
+
+.banner-two-details {
+  position: relative;
+  z-index: 2; /* To place content above the overlay */
+  padding: 20px;
+}
+
+.banner-two-details p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 1.5rem; /* Adjust for your design */
+  font-weight: 500;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6); /* Add some text shadow */
+}
+
+.banner-two-details p:first-child {
+  font-size: 2rem; /* Smaller size for pre-title */
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.banner-two-details p:nth-child(2) {
+  font-size: 3rem; /* Larger size for logo/title */
+  font-weight: bolder;
+  color: rgb(42, 42, 96);
+}
+
+.banner-two-button {
+  margin-top: 10px;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-two-button Button {
+  width: 160px;
+  height: 55px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2b3a7e, #1d2f61); /* Dark blue gradient for the button */
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin: 0 20px;
+}
+
+.banner-two-button Button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.banner-two-button Button:focus {
+  outline: none;
+}
+
+@media (max-width: 400px) {
+  .banner-two {
+    height: 50vh; /* Reduce height for small screens */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .banner-two-details p:first-child {
+    font-size: 1.2rem; /* Smaller pre-title font size */
+  }
+
+  .banner-two-details p:nth-child(2) {
+    font-size: 2rem; /* Adjust title font size */
+  }
+
+  .banner-two-button Button {
+    width: 140px; /* Smaller button size */
+    height: 45px;
+    font-size: 0.9rem; /* Smaller font */
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,81 @@
+.static-cardlist-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.static-cardlist-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    height: auto;
+    overflow: hidden;
+    padding: 0 0;
+}
+
+.static-cardlist {
+    height: auto;
+    width: 90vw;
+    /* padding: 22px; */
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    /* margin-top: 0;
+    margin-bottom: 0; */
+    /* overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none; */
+}
+
+.static-cardlist div {
+    width: 268px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 6px 6px 8px rgba(31, 94, 255, 0.5);
+    transition: all 0.4s linear;
+    flex-shrink: 0;
+}
+
+.static-cardlist div:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 10px rgba(71, 117, 234, 0.5);
+}
+
+.static-cardlist div img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+    border-radius: 10px; 
+}
+
+@media (max-width: 400px) {
+    .static-cardlist {
+      width: 100%;
+      flex-wrap: wrap; /* Allow cards to wrap */
+      justify-content: center; /* Center cards */
+      gap: 12px; /* Reduce gaps */
+      padding-top: 0;
+      padding-left: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .static-cardlist div {
+      width: 40%; /* Adjust card width */
+      height: auto; /* Maintain aspect ratio */
+      padding: 0;
+    }
+  }
+  
